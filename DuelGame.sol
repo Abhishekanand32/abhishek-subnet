@@ -22,7 +22,7 @@ contract DuelGame {
     mapping(uint => DuelDetails) public duels;
 
     constructor() {
-        tokenContract = new ERC20("AyushToken", "AYU");
+        tokenContract = new ERC20("Abhishek", "ABH");
         tokenContract.mintTokens(msg.sender, 1000);
     }
 
