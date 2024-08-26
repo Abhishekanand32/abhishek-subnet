@@ -4,8 +4,8 @@
 
 ## Steps to Follow
 
-- avalanche subnet create ayush (chain ID : 10322) (Token Symbol : AYU)
-- avalanche subnet deploy ayush
+- avalanche subnet create abhiSubnet (chain ID : 10001) (Token Symbol : ABH)
+- avalanche subnet deploy abhiSubnet
 - Importing the account & Copying the private key in the metamask.
 - Adding the network through RPC URL and chain ID
 - Interacting with the game using the REMIX IDE
@@ -349,7 +349,7 @@ contract DuelGame {
     mapping(uint => DuelDetails) public duels;
 
     constructor() {
-        tokenContract = new ERC20("AyushToken", "AYU");
+        tokenContract = new ERC20("Abhishek", "ABH");
     }
 
     function mintTokens(uint _quantity) external {
