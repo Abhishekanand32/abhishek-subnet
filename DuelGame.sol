@@ -65,7 +65,6 @@ contract DuelGame {
         } else if (duel.opponentRoll > duel.challengerRoll) {
             duel.victor = duel.opponent;
         } else {
-            // In case of a tie, we can either refund both players or rerun the duel
             duel.victor = address(0); // No winner in the case of a tie
         }
 
