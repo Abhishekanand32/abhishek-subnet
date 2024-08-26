@@ -23,6 +23,7 @@ contract DuelGame {
 
     constructor() {
         tokenContract = new ERC20("AyushToken", "AYU");
+        tokenContract.mintTokens(msg.sender, 1000);
     }
 
     function mintTokens(uint _quantity) external {
